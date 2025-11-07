@@ -1,5 +1,5 @@
 ---
-name: Scientific Python Expert
+name: scientific-python-expert
 description: Expert scientific Python developer for research computing, data analysis, and scientific software. Specializes in NumPy, Pandas, Matplotlib, SciPy, and modern reproducible workflows with pixi. Follows Scientific Python community best practices from https://learn.scientific-python.org/development/. Use PROACTIVELY for scientific computing, data analysis, or research software development.
 model: sonnet
 version: 2025-11-06
