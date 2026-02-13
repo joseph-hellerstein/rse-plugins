@@ -62,6 +62,26 @@ Domain-specific scientific computing agents and skills for astronomy, geospatial
 
 **When to use:** Astronomy research, telescope data processing, climate data analysis, Earth science workflows, geospatial analysis
 
+### AI Research Workflows Plugin
+
+Structured AI-enabled workflow for complex software development tasks with explicit phases for research, planning, experimentation, implementation, and validation.
+
+**Agent:**
+- **Research Workflow Orchestrator** - Guides users through structured development workflows from research to validated implementation
+
+**Commands:**
+- `/research` - Document and understand existing code, patterns, and architecture
+- `/plan` - Create detailed, testable implementation plans through interactive research
+- `/iterate-plan` - Refine existing plans based on feedback or changed requirements
+- `/experiment` - Try multiple approaches before committing to implementation (optional)
+- `/implement` - Execute the plan phase by phase with verification checkpoints
+- `/validate` - Systematically verify implementation against plan criteria
+
+**Skill:**
+- **research-workflow-management** - Systematic workflow methodology creating auditable trail of technical decisions in `.agents/` directory
+
+**When to use:** Complex feature development, architectural changes, exploratory implementation, technical research tasks, systematic code refactoring, documented decision-making
+
 ### HoloViz Visualization Plugin
 
 Expert agents and comprehensive skills for interactive data visualization using the HoloViz ecosystem (Panel, hvPlot, HoloViews, Datashader, GeoViews, Lumen).
@@ -106,14 +126,34 @@ rse-plugins/
 │   │       ├── python-testing/
 │   │       ├── code-quality-tools/
 │   │       └── scientific-documentation/
-│   └── scientific-domain-applications/                 # Domain-specific scientific computing plugin
+│   ├── scientific-domain-applications/                 # Domain-specific scientific computing plugin
+│   │   ├── .claude-plugin/
+│   │   │   └── plugin.json
+│   │   ├── agents/
+│   │   │   └── astronomy-astrophysics-expert.md
+│   │   └── skills/
+│   │       ├── xarray-for-multidimensional-data/
+│   │       └── astropy-fundamentals/
+│   └── ai-research-workflows/                          # AI-enabled research workflow plugin
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── agents/
-│       │   └── astronomy-astrophysics-expert.md
+│       │   └── research-workflow-orchestrator.md
+│       ├── commands/
+│       │   ├── research.md
+│       │   ├── plan.md
+│       │   ├── iterate-plan.md
+│       │   ├── experiment.md
+│       │   ├── implement.md
+│       │   └── validate.md
 │       └── skills/
-│           ├── xarray-for-multidimensional-data/
-│           └── astropy-fundamentals/
+│           └── research-workflow-management/
+│               ├── SKILL.md
+│               └── assets/
+│                   ├── research-template.md
+│                   ├── plan-template.md
+│                   ├── experiment-template.md
+│                   └── implement-template.md
 ├── community-plugins/                                  # Community-contributed plugins
 │   └── holoviz-visualization/                          # HoloViz ecosystem plugin
 │       ├── .claude-plugin/

@@ -66,6 +66,26 @@
             ],
             "category": "data-science",
             "strict": false
+        },
+        {
+            "name": "ai-research-workflows",
+            "source": "./plugins/ai-research-workflows",
+            "description": "Structured AI-enabled research workflows for software development: Research, Plan, Experiment, Implement",
+            "homepage": "https://github.com/uw-ssec/rse-plugins",
+            "repository": "https://github.com/uw-ssec/rse-plugins",
+            "license": "BSD-3-Clause",
+            "keywords": [
+                "research",
+                "planning",
+                "workflow",
+                "implementation",
+                "experimentation",
+                "validation",
+                "software-development",
+                "research-software-engineering"
+            ],
+            "category": "development",
+            "strict": false
         }
     ]
 }
